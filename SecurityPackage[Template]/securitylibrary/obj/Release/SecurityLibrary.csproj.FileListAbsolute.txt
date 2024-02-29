@@ -1,0 +1,6 @@
+C:\Users\sheha\Downloads\Security\SecurityPackage[Template]\SecurityLibrary\bin\Release\SecurityLibrary.dll
+C:\Users\sheha\Downloads\Security\SecurityPackage[Template]\SecurityLibrary\bin\Release\SecurityLibrary.pdb
+C:\Users\sheha\Downloads\Security\SecurityPackage[Template]\SecurityLibrary\obj\Release\SecurityLibrary.csproj.AssemblyReference.cache
+C:\Users\sheha\Downloads\Security\SecurityPackage[Template]\SecurityLibrary\obj\Release\SecurityLibrary.csproj.CoreCompileInputs.cache
+C:\Users\sheha\Downloads\Security\SecurityPackage[Template]\SecurityLibrary\obj\Release\SecurityLibrary.dll
+C:\Users\sheha\Downloads\Security\SecurityPackage[Template]\SecurityLibrary\obj\Release\SecurityLibrary.pdb

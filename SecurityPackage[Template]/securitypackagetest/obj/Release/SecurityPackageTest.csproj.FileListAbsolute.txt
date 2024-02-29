@@ -1,0 +1,9 @@
+C:\Users\sheha\Downloads\Security\SecurityPackage[Template]\SecurityPackageTest\bin\Release\SecurityPackageTest.dll
+C:\Users\sheha\Downloads\Security\SecurityPackage[Template]\SecurityPackageTest\bin\Release\SecurityPackageTest.pdb
+C:\Users\sheha\Downloads\Security\SecurityPackage[Template]\SecurityPackageTest\bin\Release\SecurityLibrary.dll
+C:\Users\sheha\Downloads\Security\SecurityPackage[Template]\SecurityPackageTest\bin\Release\SecurityLibrary.pdb
+C:\Users\sheha\Downloads\Security\SecurityPackage[Template]\SecurityPackageTest\obj\Release\SecurityPackageTest.csproj.AssemblyReference.cache
+C:\Users\sheha\Downloads\Security\SecurityPackage[Template]\SecurityPackageTest\obj\Release\SecurityPackageTest.csproj.CoreCompileInputs.cache
+C:\Users\sheha\Downloads\Security\SecurityPackage[Template]\SecurityPackageTest\obj\Release\Security.174D7A11.Up2Date
+C:\Users\sheha\Downloads\Security\SecurityPackage[Template]\SecurityPackageTest\obj\Release\SecurityPackageTest.dll
+C:\Users\sheha\Downloads\Security\SecurityPackage[Template]\SecurityPackageTest\obj\Release\SecurityPackageTest.pdb
