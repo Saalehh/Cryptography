@@ -118,7 +118,7 @@ namespace SecurityLibrary
         /// Frequency Information:
         /// E   12.51%
         /// T	9.25
-        /// A	8.05
+        /// A	=
         /// O	7.60
         /// I	7.26
         /// N	7.09
@@ -149,31 +149,21 @@ namespace SecurityLibrary
 
         public string AnalyseUsingCharFrequency(string cipher)
         {
-            throw new NotImplementedException();
-            /*var FREQ_ALPHA = new Dictionary<float, char>() { { 8.05f, 'a' }, { 1.54f , 'b' }, { 3.06f , 'c' },
-            { 3.99f , 'd' }, { 12.51f , 'e' }, { 2.30f , 'f' }, { 1.96f , 'g' }, { 5.49f , 'h' }, { 7.26f , 'i' }, { 0.16f , 'j' },
-            { 0.67f , 'k' }, { 4.14f , 'l' }, { 2.53f , 'm' }, { 7.09f , 'n' }, { 7.60f , 'o' }, { 2.00f , 'p' }, { 0.11f , 'q' },
-            { 6.12f , 'r' }, { 6.54f , 's' }, { 9.25f , 't' }, { 2.71f , 'u' },{ 0.99f , 'v' }, { 1.92f , 'w' }, { 0.19f , 'x' },
-            { 1.73f , 'y' }, { 0.09f , 'z' }};
-
-            var ALPHA_FREQ = new Dictionary<char, float>() { { 'a', 8.05f }, { 'b' , 1.54f }, { 'c' , 3.06f },
-            { 'd' , 3.99f }, { 'e' , 12.51f }, { 'f' , 2.30f }, { 'g' , 1.96f }, { 'h' , 5.49f }, { 'i' , 7.26f }, { 'j' , 0.16f },
-            { 'k' , 0.67f }, { 'l' , 4.14f }, { 'm' , 2.53f }, { 'n' , 7.09f }, { 'o' , 7.60f }, { 'p' , 2.00f }, { 'q' , 0.11f },
-            { 'r' , 6.12f }, { 's' , 6.54f }, { 't' , 9.25f }, { 'u' , 2.71f },{ 'v' , 0.99f }, { 'w' , 1.92f }, { 'x' , 0.19f },
-            { 'y' , 1.73f }, { 'z' , 0.09f }};
-
-            var sortedAlpha = new Dictionary<int, char>() { { 0, 'e' }, { 1 , 't' }, { 2 , 'a' },
+            var sortedAlpha = new SortedDictionary<int, char>() { { 0, 'e' }, { 1 , 't' }, { 2 , 'a' },
             { 3, 'o' }, { 4, 'i' },{ 5, 'n' }, { 6, 's' }, { 7, 'r' }, { 8, 'h' }, { 9, 'l' }, { 10, 'd' }, { 11, 'c' },
             { 12, 'u' }, { 13, 'm' }, { 14, 'f' }, { 15, 'p' }, { 16, 'g' }, { 17, 'w' }, { 18, 'y' }, { 19, 'b' }, { 20, 'v' },
             { 21, 'k' }, { 22, 'x' }, { 23, 'j' }, { 24, 'q' }, { 25, 'z' }};
 
             StringBuilder plainText = new StringBuilder();
-            var letterFreq = new Dictionary<char, int>();
+            var letterFreq = new SortedDictionary<char, int>();
 
             // Calculate the frequency of each letter in cipherText
             foreach (char letter in cipher.ToLower())
             {
-                letterFreq[letter]++;
+                if (letterFreq.ContainsKey(letter))
+                    letterFreq[letter]++;
+                else
+                    letterFreq.Add(letter, 1);
             }
 
             // Sort the cipherText letters according to their frequency
@@ -181,10 +171,10 @@ namespace SecurityLibrary
             foreach (KeyValuePair<char, int> entry in letterFreq)
             {
                 char letter = entry.Key;
-                int freq = entry.Value;
-
                 cipherTextSorted.Append(letter);
             }
+
+            // Apply BubbleSort to sort the cipherText letters
             for (int i = 0; i < cipherTextSorted.Length; i++)
             {
                 for (int j = i + 1; j < cipherTextSorted.Length; j++)
@@ -197,12 +187,20 @@ namespace SecurityLibrary
                     }
                 }
             }
+
+            // Map the sorted letters with the sorted frequency chart (descendingly)
+            var mapping = new SortedDictionary<char, char>();
             for (int i = 0; i < cipherTextSorted.Length; i++)
             {
-                cipherTextSorted[i] = sortedAlpha[i];
+                mapping.Add(cipherTextSorted[i], sortedAlpha[i]);
+            }
+            foreach (char letter in cipher.ToLower())
+            {
+                if (mapping.ContainsKey(letter))
+                    plainText.Append(mapping[letter]);
             }
 
-            return cipherTextSorted.ToString();*/
+            return plainText.ToString();
         }
     }
 }

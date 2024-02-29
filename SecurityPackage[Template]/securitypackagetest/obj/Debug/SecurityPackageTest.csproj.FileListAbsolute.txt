@@ -88,12 +88,3 @@ D:\Coding\Cryptography\Cryptography_csharp\SecurityPackage[Template]\SecurityPac
 D:\Coding\Cryptography\Cryptography_csharp\SecurityPackage[Template]\SecurityPackageTest\obj\Debug\Security.174D7A11.Up2Date
 D:\Coding\Cryptography\Cryptography_csharp\SecurityPackage[Template]\SecurityPackageTest\obj\Debug\SecurityPackageTest.dll
 D:\Coding\Cryptography\Cryptography_csharp\SecurityPackage[Template]\SecurityPackageTest\obj\Debug\SecurityPackageTest.pdb
-D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\securitypackagetest\bin\Debug\SecurityPackageTest.dll
-D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\securitypackagetest\bin\Debug\SecurityPackageTest.pdb
-D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\securitypackagetest\bin\Debug\SecurityLibrary.dll
-D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\securitypackagetest\bin\Debug\SecurityLibrary.pdb
-D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\securitypackagetest\obj\Debug\SecurityPackageTest.csproj.AssemblyReference.cache
-D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\securitypackagetest\obj\Debug\SecurityPackageTest.csproj.CoreCompileInputs.cache
-D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\securitypackagetest\obj\Debug\SecurityPackageTest.csproj.CopyComplete
-D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\securitypackagetest\obj\Debug\SecurityPackageTest.dll
-D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\securitypackagetest\obj\Debug\SecurityPackageTest.pdb

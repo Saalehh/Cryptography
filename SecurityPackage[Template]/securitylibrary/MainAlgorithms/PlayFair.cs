@@ -11,7 +11,7 @@ namespace SecurityLibrary
         public string Decrypt(string cipherText, string key)
         {
             Console.WriteLine("[+] The Cipher Text is: " + cipherText);
-            
+
             string plainText = "";
 
 
@@ -314,25 +314,22 @@ namespace SecurityLibrary
         }
 
     }
-
-
-
-    /*
-    Key = helloworld
-
-    j:   0   1   2   3   4
-    i                    
-    0    H	 E	 L	 O	 W          (0, 3) --> (0, 0)
-    1    R	 D	 A	 B	 C          (1, 0) --> (1, 3)
-    2    F	 G	 I	 K	 M
-    3    N	 P	 Q	 S	 T          (3, 3) --> (3, 4)
-    4    U	 V	 X	 Y	 Z          (3, 4) --> (3, 0)
-
-    STOORYYBOX
-    ST OX OR YX YB OX
-    TN LY HB ZY OK LY
-
-
-     */
-
 }
+
+/*
+ Key = helloworld
+
+ j:   0   1   2   3   4
+ i                    
+ 0    H	 E	 L	 O	 W          (0, 3) --> (0, 0)
+ 1    R	 D	 A	 B	 C          (1, 0) --> (1, 3)
+ 2    F	 G	 I	 K	 M
+ 3    N	 P	 Q	 S	 T          (3, 3) --> (3, 4)
+ 4    U	 V	 X	 Y	 Z          (3, 4) --> (3, 0)
+
+ STOORYYBOX
+ ST OX OR YX YB OX
+ TN LY HB ZY OK LY
+
+
+  */
