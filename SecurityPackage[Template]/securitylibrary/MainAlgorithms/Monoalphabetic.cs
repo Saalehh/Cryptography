@@ -118,7 +118,7 @@ namespace SecurityLibrary
         /// Frequency Information:
         /// E   12.51%
         /// T	9.25
-        /// A	=
+        /// A	8.05
         /// O	7.60
         /// I	7.26
         /// N	7.09
