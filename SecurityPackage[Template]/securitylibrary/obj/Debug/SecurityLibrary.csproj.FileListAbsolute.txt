@@ -58,3 +58,9 @@ D:\Coding\Cryptography\Cryptography_csharp\SecurityPackage[Template]\SecurityLib
 D:\Coding\Cryptography\Cryptography_csharp\SecurityPackage[Template]\SecurityLibrary\obj\Debug\SecurityLibrary.csproj.CoreCompileInputs.cache
 D:\Coding\Cryptography\Cryptography_csharp\SecurityPackage[Template]\SecurityLibrary\obj\Debug\SecurityLibrary.dll
 D:\Coding\Cryptography\Cryptography_csharp\SecurityPackage[Template]\SecurityLibrary\obj\Debug\SecurityLibrary.pdb
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\SecurityLibrary\bin\Debug\SecurityLibrary.dll
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\SecurityLibrary\bin\Debug\SecurityLibrary.pdb
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\SecurityLibrary\obj\Debug\SecurityLibrary.csproj.AssemblyReference.cache
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\SecurityLibrary\obj\Debug\SecurityLibrary.csproj.CoreCompileInputs.cache
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\SecurityLibrary\obj\Debug\SecurityLibrary.dll
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\SecurityLibrary\obj\Debug\SecurityLibrary.pdb

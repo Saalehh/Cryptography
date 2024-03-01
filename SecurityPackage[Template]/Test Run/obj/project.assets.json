@@ -1,0 +1,111 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "SecurityLibrary/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/SecurityLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SecurityLibrary.dll": {}
+        }
+      },
+      "SecurityPackageTest/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "SecurityLibrary": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SecurityPackageTest.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SecurityPackageTest.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SecurityLibrary/1.0.0": {
+      "type": "project",
+      "path": "../SecurityLibrary/SecurityLibrary.csproj",
+      "msbuildProject": "../SecurityLibrary/SecurityLibrary.csproj"
+    },
+    "SecurityPackageTest/1.0.0": {
+      "type": "project",
+      "path": "../SecurityPackageTest/SecurityPackageTest.csproj",
+      "msbuildProject": "../SecurityPackageTest/SecurityPackageTest.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "SecurityLibrary >= 1.0.0",
+      "SecurityPackageTest >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\DELL\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\Test Run\\Test Run.csproj",
+      "projectName": "Test Run",
+      "projectPath": "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\Test Run\\Test Run.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\Test Run\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\SecurityLibrary\\SecurityLibrary.csproj": {
+              "projectPath": "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\SecurityLibrary\\SecurityLibrary.csproj"
+            },
+            "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\SecurityPackageTest\\SecurityPackageTest.csproj": {
+              "projectPath": "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\SecurityPackageTest\\SecurityPackageTest.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

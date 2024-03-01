@@ -1,0 +1,104 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\Test Run\\Test Run.csproj": {}
+  },
+  "projects": {
+    "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\SecurityLibrary\\SecurityLibrary.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\SecurityLibrary\\SecurityLibrary.csproj",
+        "projectName": "SecurityLibrary",
+        "projectPath": "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\SecurityLibrary\\SecurityLibrary.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\SecurityPackageTest\\SecurityPackageTest.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\SecurityPackageTest\\SecurityPackageTest.csproj",
+        "projectName": "SecurityPackageTest",
+        "projectPath": "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\SecurityPackageTest\\SecurityPackageTest.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\SecurityLibrary\\SecurityLibrary.csproj": {
+                "projectPath": "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\SecurityLibrary\\SecurityLibrary.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\Test Run\\Test Run.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\Test Run\\Test Run.csproj",
+        "projectName": "Test Run",
+        "projectPath": "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\Test Run\\Test Run.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\Test Run\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\SecurityLibrary\\SecurityLibrary.csproj": {
+                "projectPath": "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\SecurityLibrary\\SecurityLibrary.csproj"
+              },
+              "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\SecurityPackageTest\\SecurityPackageTest.csproj": {
+                "projectPath": "D:\\GitProjects\\Cybersecurity-Crpto-Tasks\\SecurityPackage[Template]\\SecurityPackageTest\\SecurityPackageTest.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

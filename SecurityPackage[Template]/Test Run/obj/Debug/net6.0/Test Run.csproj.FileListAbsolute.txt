@@ -1,0 +1,20 @@
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\Test Run\bin\Debug\net6.0\Test Run.exe
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\Test Run\bin\Debug\net6.0\Test Run.deps.json
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\Test Run\bin\Debug\net6.0\Test Run.runtimeconfig.json
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\Test Run\bin\Debug\net6.0\Test Run.dll
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\Test Run\bin\Debug\net6.0\Test Run.pdb
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\Test Run\bin\Debug\net6.0\SecurityLibrary.dll
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\Test Run\bin\Debug\net6.0\SecurityPackageTest.dll
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\Test Run\bin\Debug\net6.0\SecurityLibrary.pdb
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\Test Run\bin\Debug\net6.0\SecurityPackageTest.pdb
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\Test Run\obj\Debug\net6.0\Test Run.csproj.AssemblyReference.cache
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\Test Run\obj\Debug\net6.0\Test Run.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\Test Run\obj\Debug\net6.0\Test Run.AssemblyInfoInputs.cache
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\Test Run\obj\Debug\net6.0\Test Run.AssemblyInfo.cs
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\Test Run\obj\Debug\net6.0\Test Run.csproj.CoreCompileInputs.cache
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\Test Run\obj\Debug\net6.0\Test Run.csproj.CopyComplete
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\Test Run\obj\Debug\net6.0\Test Run.dll
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\Test Run\obj\Debug\net6.0\refint\Test Run.dll
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\Test Run\obj\Debug\net6.0\Test Run.pdb
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\Test Run\obj\Debug\net6.0\Test Run.genruntimeconfig.cache
+D:\GitProjects\Cybersecurity-Crpto-Tasks\SecurityPackage[Template]\Test Run\obj\Debug\net6.0\ref\Test Run.dll

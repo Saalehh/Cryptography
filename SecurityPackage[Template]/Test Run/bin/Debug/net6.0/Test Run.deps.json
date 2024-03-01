@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Test Run/1.0.0": {
+        "dependencies": {
+          "SecurityLibrary": "1.0.0",
+          "SecurityPackageTest": "1.0.0"
+        },
+        "runtime": {
+          "Test Run.dll": {}
+        }
+      },
+      "SecurityLibrary/1.0.0": {
+        "runtime": {
+          "SecurityLibrary.dll": {}
+        }
+      },
+      "SecurityPackageTest/1.0.0": {
+        "dependencies": {
+          "SecurityLibrary": "1.0.0"
+        },
+        "runtime": {
+          "SecurityPackageTest.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Test Run/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SecurityLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SecurityPackageTest/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
