@@ -1,4 +1,3 @@
-# Cryptography
 This repository contains implementations of different cryptographic algorithms for understanding the concept cryptography and gaining the ability to implement and analyze different cryptographic algorithms.
 
 # Cloning Repository
