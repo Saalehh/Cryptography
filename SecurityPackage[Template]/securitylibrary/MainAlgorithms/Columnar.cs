@@ -13,18 +13,123 @@ namespace SecurityLibrary
          * Encryption
          * 
          * Key = 1 3 4 2 5
-         * 
+         *  
+         *  [+] Write                        [+] Read
+         *  Row-Wise                         Col-Wise
+         *  
+         *  C O M P U                        C P O M U
+         *  T E R S C           ->           T S E R C
+         *  I E N C E                        I C E N E
+         *  
          *  0 1 2 3 4 5 6 7 8 9 1 1 1 1 1    0 5 1 3 
          *                      0 1 2 3 4        0
          *  C o m p u t e r S c i e n c e -> C T I P S C O E E M R N U C E
          *  
-         *  rowSize = key.Count()
-         *  Depth = Ceil(plainText.Length/rowSize)
+         *  nColumns = key.Count()
+         *  depth = Ceil(plainText.Length/rowSize)
+         *  [+] Matrix: depth x nColumns
          */
 
         public List<int> Analyse(string plainText, string cipherText)
         {
-            throw new NotImplementedException();
+            plainText = plainText.ToUpper();
+            
+            int nColumns = CalculateColumnsNumber(plainText, cipherText);
+            int depth = plainText.Length / nColumns;
+
+            char[,] plainTextTable = Create2DArray(plainText, nColumns, depth, "row-wise");
+            char[,] cipherTextTable = Create2DArray(cipherText, nColumns, depth, "col-wise");
+
+            var keyGen = new List<int>();
+            for(int i = 1; i <= nColumns; i++)
+                keyGen.Add(i);
+
+            for (int i = 0; i < 1; i++)
+            {
+                for (int j = 0; j < nColumns; j++)
+                {
+                    // Search the row
+                    for (int k = 0; k < nColumns; k++)
+                    {
+                        bool found = false;
+                        if (plainTextTable[i, j] == cipherTextTable[i, k])
+                        {
+                            // Check the Column
+                            bool areEqual = true;
+                            for (int l = 0; l < depth; l++)
+                            {
+                                if (plainTextTable[l, j] != cipherTextTable[l, k])
+                                {
+                                    areEqual = false;
+                                    break;
+                                }
+                            }
+                            if (areEqual)
+                            {
+                                keyGen[j] = k + 1;
+                                found = true;
+                            }
+                        }
+                        if (found)
+                            break;
+                    }
+                }
+            }
+
+            return keyGen;
+        }
+
+        private int CalculateColumnsNumber(string plainText, string cipherText)
+        {
+            // Dictionary for number of letter occurrence in cipherText
+            Dictionary<char, int> occurrence = new Dictionary<char, int>();
+            // Initialization
+            foreach (char letter in plainText)
+            {
+                if (!occurrence.ContainsKey(letter))
+                    occurrence.Add(letter, 1);
+            }
+
+            int mostFreqColNum = 0;
+            // Dictionary for calculating the mostFreqColNum
+            var freq = new Dictionary<int, int>();
+            // Initialization
+            freq[mostFreqColNum] = 0;
+
+            for (int i = 1; i < cipherText.Length; i++)
+            {
+                int indexBefore = plainText.IndexOf(cipherText[i - 1]);
+                for (int j = 0; j < occurrence[cipherText[i - 1]] - 1; j++)
+                {
+                    int temp = plainText.IndexOf(cipherText[i - 1], indexBefore + 1);
+                    indexBefore = (temp != -1) ? temp : indexBefore;
+                }
+
+                occurrence[cipherText[i]]++;
+                int indexPresent = plainText.IndexOf(cipherText[i]);
+                for (int j = 0; j < occurrence[cipherText[i]] - 1; j++)
+                {
+                    int temp = plainText.IndexOf(cipherText[i], indexPresent + 1);
+                    indexPresent = (temp != -1) ? temp : indexPresent;
+                }
+
+                // Calculate the distance between both indices
+                int distance = (indexPresent > indexBefore) ?
+                    indexPresent - indexBefore : indexBefore - indexPresent;
+
+                // Increase the frequency of this distance
+                if (!freq.ContainsKey(distance))
+                {
+                    freq.Add(distance, 0);
+                }
+                freq[distance]++;
+
+                // mostFreqColNum = Max between this distance and mostFreqColNum
+                mostFreqColNum = (freq[distance] > freq[mostFreqColNum]) ?
+                    distance : mostFreqColNum;
+            }
+
+            return mostFreqColNum;
         }
 
         public string Decrypt(string cipherText, List<int> key)
