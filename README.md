@@ -38,7 +38,7 @@ We welcome contributions from the community to enhance the functionality and usa
 ```bash
 git clone https://github.com/Saalehh/Cybersecurity-Crpto-Tasks.git
 ```
-#### Submitting Instructions For Contributors⚠️
+#### Submitting Instructions For Contributors
 
 1. Open the **CMD**/**Git Bash** in the directory contains the repository you cloned or you can normally open the **CMD** and change the current path using:
 ```bash
