@@ -33,6 +33,7 @@ namespace SecurityLibrary
         public List<int> Analyse(string plainText, string cipherText)
         {
             plainText = plainText.ToUpper();
+            cipherText = cipherText.ToUpper();
             
             int nColumns = CalculateColumnsNumber(plainText, cipherText);
             int depth = plainText.Length / nColumns;
