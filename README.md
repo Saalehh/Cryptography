@@ -5,7 +5,7 @@ This repository contains implementations of different cryptographic algorithms f
 ```bash
 git clone https://github.com/Saalehh/Cybersecurity-Crpto-Tasks.git
 ```
-# Submitting Instructions For Contributers⚠️
+# Submitting Instructions For Contributors⚠️
 
 1. Open the **CMD**/**Git Bash** in the directory contains the repository you cloned or you can normally open the **CMD** and change the current path using:
 ```bash
